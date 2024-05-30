@@ -1,6 +1,6 @@
 import { Box, Container, Flex, Heading, Text, VStack, HStack, Link, Badge } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
-import { FaHome, FaTags, FaInfoCircle, FaUserPlus } from "react-icons/fa";
+import { FaHome, FaTags, FaInfoCircle, FaUserPlus, FaPlus } from "react-icons/fa";
 
 const threads = [
   {
@@ -40,6 +40,10 @@ const Index = () => {
           <Link as={RouterLink} to="/register" display="flex" alignItems="center">
             <FaUserPlus />
             <Text ml={2}>Register</Text>
+          </Link>
+          <Link as={RouterLink} to="/create-post" display="flex" alignItems="center">
+            <FaPlus />
+            <Text ml={2}>Create Post</Text>
           </Link>
         </HStack>
       </Flex>
